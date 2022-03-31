@@ -16,17 +16,17 @@ class SectorMomentumAlgorithm(QCAlgorithm):
         self.data = {}
         period = 252
         # choose ten sector ETFs
-        self.symbols = ["XLB",  # Vanguard Real Estate Index Fund
-                        "XLV",  # Technology Select Sector SPDR Fund
-                        "XLC",  # Energy Select Sector SPDR Fund
-                        "XLK",  # Health Care Select Sector SPDR Fund
+        self.symbols = ["XLB",  # Materials Select Sector SPDR Fund
+                        "XLV",  # Health Care Select Sector SPDR Fund
+                        "XLC",  # Communication Services Select Sector SPDR Fund
+                        "XLK",  # Technology Select Sector SPDR Fund
                         "XLF",  # Financial Select Sector SPDR Fund
-                        "XLP",  # SPDR S&P Bank ETF
-                        "XLI",  # Vanguard Materials ETF
-                        "XLU",  # Consumer Discretionary Select Sector SPDR Fund
-                        "XLY",  # Consumer Staples Select Sector SPDR Fund
-                        "XLE",
-                        "XLRE"]  # Vanguard Information Technology ETF
+                        "XLP",  # Consumer Staples Select Sector SPDR Fund
+                        "XLI",  # Industrial Select Sector SPDR Fund
+                        "XLU",  # Utilities Select Sector SPDR Fund
+                        "XLY",  # Consumer Discretionary Select Sector SPDR Fund
+                        "XLE",  # Energy Select Sector SPDR Fund
+                        "XLRE"]  # Real Estate Select Sector SPDR Fund
                         
         # warm up the MOM indicator
         self.SetWarmUp(period)
