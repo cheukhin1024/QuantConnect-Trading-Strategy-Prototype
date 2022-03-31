@@ -33,6 +33,7 @@ class SectorMomentumAlgorithm(QCAlgorithm):
         for symbol in self.symbols:
             self.AddEquity(symbol, Resolution.Daily)
             self.data[symbol] = self.ROC(symbol, period, Resolution.Daily)
+            
         # shcedule the function to fire at the month start 
         self.Schedule.On(self.DateRules.MonthStart("XLK"), self.TimeRules.AfterMarketOpen("XLK"), self.Rebalance)
             
